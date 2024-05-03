@@ -7,6 +7,7 @@ import java.io.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
+import javax.swing.*;
 import java.io.IOException;
 
 @WebServlet(name = "LoginServlet1", value = "/login")
@@ -38,6 +39,8 @@ public class LoginServlet1 extends HttpServlet {
         out.println("<html><body>");
         out.println("<h1>" + message + "</h1>");
         out.println("</body></html>");
+
+        JOptionPane.showMessageDialog(null, "Hola, es mi primer login");
     }
 
     public void destroy() {
